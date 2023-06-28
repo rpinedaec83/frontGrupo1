@@ -1,1 +1,101 @@
-@import"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap";:root{--fontFamily: "Poppins", sans-serif;--black: #000;--white: #fff;--white2: #F8F8FA;--gray: #222;--gray2: #F2F3F5;--blue: #5640FF;--darkBlue: #000425;--darkblue2: #000D29;--red: #F22A40;--regular: 400;--medium: 500;--semibold: 600;--bold: 700;--blue-to-lightblue: linear-gradient(180deg, rgba(48,21,253,1) 0%, rgba(86,64,255,1) 100%)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--fontFamily);font-size:14px}h1{font-size:54px;font-weight:var(--bold)}h2{font-size:26px;font-weight:var(--bold)}h3{font-size:20px;font-weight:var(--medium)}/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+:root {
+  /* Font Family*/
+  --fontFamily: "Poppins", sans-serif;
+  /*Colores */
+  --black: #000;
+  --white: #fff;
+  --white2: #F8F8FA;
+  --gray: #222;
+  --gray2: #F2F3F5;
+  --blue: #5640FF;
+  --darkBlue: #000425;
+  --darkblue2: #000D29;
+  --red: #F22A40;
+  /* Font Weights*/
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  /* Gradient */
+  --blue-to-lightblue: linear-gradient(180deg, rgba(48,21,253,1) 0%, rgba(86,64,255,1) 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fontFamily);
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 54px;
+  font-weight: var(--bold);
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: var(--bold);
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: var(--medium);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fontFamily);
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 54px;
+  font-weight: var(--bold);
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: var(--bold);
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: var(--medium);
+}
+
+:root {
+  /* Font Family*/
+  --fontFamily: "Poppins", sans-serif;
+  /*Colores */
+  --black: #000;
+  --white: #fff;
+  --white2: #F8F8FA;
+  --gray: #222;
+  --gray2: #F2F3F5;
+  --blue: #5640FF;
+  --darkBlue: #000425;
+  --darkblue2: #000D29;
+  --red: #F22A40;
+  /* Font Weights*/
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  /* Gradient */
+  --blue-to-lightblue: linear-gradient(180deg, rgba(48,21,253,1) 0%, rgba(86,64,255,1) 100%);
+}
+
+.button-form-continue {
+  background-color: --blue;
+}/*# sourceMappingURL=main.css.map */
