@@ -1,0 +1,6 @@
+button:focus, input[type="submit"]:focus, input:focus{
+    outline: none;
+}
+button, input[type="submit"]{
+    cursor: pointer;
+}
