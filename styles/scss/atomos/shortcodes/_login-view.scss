@@ -155,74 +155,74 @@
     margin-right: auto
 }
 
-.LoginRegister__Social{
-    margin-top: 35px;
-    display: grid;
-    grid-row-gap: 15px
-}
+// .LoginRegister__Social{
+//     margin-top: 35px;
+//     display: grid;
+//     grid-row-gap: 15px
+// }
 
-.LoginRegister__Social .Parrafo{
-    text-align: center
-}
+// .LoginRegister__Social .Parrafo{
+//     text-align: center
+// }
 
-.LoginRegister__Social .IconBox{
-    display: flex;
-    justify-content: center
-}
+// .LoginRegister__Social .IconBox{
+//     display: flex;
+//     justify-content: center
+// }
 
-.LoginRegister__Social .IconBox img{
-    margin: 0 5px;
-    cursor: pointer
-}
+// .LoginRegister__Social .IconBox img{
+//     margin: 0 5px;
+//     cursor: pointer
+// }
 
-.LoginRegister__Form{
-    margin-top: 40px
-}
+// .LoginRegister__Form{
+//     margin-top: 40px
+// }
 
-.LoginRegister__Form input{
-    width: 100%;
-    height: 50px
-}
+// .LoginRegister__Form input{
+//     width: 100%;
+//     height: 50px
+// }
 
-.LoginRegister__Form input[type=email],.LoginRegister__Form input[type=password],.LoginRegister__Form input[type=text]{
-    border: 1px solid grey;
-    padding: 0 15px;
-    border-radius: 5px;
-    margin-bottom: 20px
-}
+// .LoginRegister__Form input[type=email],.LoginRegister__Form input[type=password],.LoginRegister__Form input[type=text]{
+//     border: 1px solid grey;
+//     padding: 0 15px;
+//     border-radius: 5px;
+//     margin-bottom: 20px
+// }
 
-.LoginRegister__Form .FormCheck{
-    display: flex;
-    align-items: center
-}
+// .LoginRegister__Form .FormCheck{
+//     display: flex;
+//     align-items: center
+// }
 
-.LoginRegister__Form .FormCheck input[type=checkbox]{
-    width: 20px;
-    height: 20px;
-    margin-right: 15px
-}
+// .LoginRegister__Form .FormCheck input[type=checkbox]{
+//     width: 20px;
+//     height: 20px;
+//     margin-right: 15px
+// }
 
-.LoginRegister__Form .FormCheck .is-term{
-    font-weight: 700;
-    text-decoration: underline;
-    cursor: pointer
-}
+// .LoginRegister__Form .FormCheck .is-term{
+//     font-weight: 700;
+//     text-decoration: underline;
+//     cursor: pointer
+// }
 
-.LoginRegister__Form input[type=submit]{
-    margin-top: 40px;
-    border-radius: 10px;
-    border: none;
-    background-color: var(--blue);
-    color: var(--white);
-    font-weight: 700;
-    cursor: pointer;
-    transition: all .3s;
-    margin-bottom: 30px
-}
+// .LoginRegister__Form input[type=submit]{
+//     margin-top: 40px;
+//     border-radius: 10px;
+//     border: none;
+//     background-color: var(--blue);
+//     color: var(--white);
+//     font-weight: 700;
+//     cursor: pointer;
+//     transition: all .3s;
+//     margin-bottom: 30px
+// }
 
-.LoginRegister__Form input[type=submit]:hover {
-    background-color: var(--darkBlue)
-}
+// .LoginRegister__Form input[type=submit]:hover {
+//     background-color: var(--darkBlue)
+// }
 
 .login-form{
     width: 100%;
