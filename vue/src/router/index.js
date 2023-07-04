@@ -29,6 +29,6 @@ router.beforeEach(async (to) => {
 
     if (authRequired && !authStore.user) {
         authStore.returnUrl = to.fullPath;
-        //return '/account/login';
+        return '/account/login';
     }
 });
