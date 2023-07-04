@@ -40,7 +40,7 @@ async function onSubmit(values) {
                 </div>
                 <Form class="login-in-form" @submit="onSubmit" :validation-schema="schema" v-slot="{ errors, isSubmitting }">
                     <div class="form-group">
-                        <Field name="username" placeholder="Correo electrónico" type="email" class="form-control" :class="{ 'is-invalid': errors.username }" />
+                        <Field name="username" placeholder="Usuario" type="text" class="form-control" :class="{ 'is-invalid': errors.username }" />
                         <div class="invalid-feedback">{{ errors.username }}</div>
                     </div>
                     <div class="form-group">
@@ -50,7 +50,7 @@ async function onSubmit(values) {
                     <div class="form-group">
                         <button class="btn btn-primary login-button" :disabled="isSubmitting">
                             <span v-show="isSubmitting" class="spinner-border spinner-border-sm mr-1"></span>
-                            Login
+                            Ingresar
                         </button>
                     </div>
                 </Form>
