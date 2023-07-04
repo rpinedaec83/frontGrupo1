@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--fontFamily);
+    font-size: 14px;
+    color: var(--bodyColor);
+    background-color: var(--bodyBgColor);
+}
+
+h1{
+    font-size: 54px;
+    font-weight: var(--bold);
+}
+
+h2{
+    font-size: 26px;
+    font-weight: var(--bold);
+}
+
+h3{
+    font-size: 20px;
+    font-weight: var(--medium);
+}
+
+.container{
+    max-width: 1310px;
+    padding: 0 50px;
+}
+
+.content{
+    padding-top: var(--contentSpace, 100px);
+    padding-bottom: var(--contentSpace, 100px);
+}
+
+.main-section{
+    --bodyColor: var(--darkBlue);
+    --bodyBgColor: var(--white);
+}
+
+.alternate-section{
+    --bodyColor: var(--white);
+    --bodyBgColor: var(--blue);
+}
+  
+/*Layout*/
+
+.container-full{
+width: 100%;
+padding: 0 10px;
+min-width: 300px;
+}
+
+.section-type-1{
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+@media screen and (min-width: 770px){ 
+.container-full{
+    width: 100%;
+    padding: 0 30px;
+    min-width: 300px;
+}
+}
+
+@media screen and (min-width: 990px){
+.container-full{
+    width: 100%;
+    padding: 0 50px;
+    min-width: 300px;
+}
+}
+
+
+button:focus, input[type="submit"]:focus, input:focus{
+outline: none;
+}
+
+button, input[type="submit"]{
+cursor: pointer;
+}
