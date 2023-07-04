@@ -6,13 +6,11 @@ const authStore = useAuthStore();
 </script>
 
 <template>
-
     <Nav />
     <Alert />
     <div class="login-view">
         <router-view />
     </div>
-    
 </template>
 
 <style>
