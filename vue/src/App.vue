@@ -15,5 +15,4 @@ const authStore = useAuthStore();
 
 <style>
 @import '@/assets/scss/main.css';
-@import '@/assets/login-view.css';
 </style>
