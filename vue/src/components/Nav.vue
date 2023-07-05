@@ -1,6 +1,5 @@
 <script setup>
 import { useAuthStore } from '@/stores';
-
 const authStore = useAuthStore();
 </script>
 
@@ -36,7 +35,7 @@ const authStore = useAuthStore();
                         <a href=""></a>
                     </li>
                     <li class="menu-item menu-item-burger">
-                        <button class="hamburger-toggle">
+                        <button id="burger-button" class="hamburger-toggle">
 			                <div class="burger-box"></div>
 		                </button>
                     </li>
