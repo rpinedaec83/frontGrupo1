@@ -1,0 +1,18 @@
+:root{
+    --headerHeight: 58px;
+}
+.header{
+    position: fixed;
+    transition: box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
+    z-index: 12;
+    width: 100%;
+    .header-inner{
+        height: var(--headerHeight);
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    &.is-alternate{
+        
+    }
+}

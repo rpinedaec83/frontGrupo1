@@ -29,11 +29,17 @@ h3{
 .container{
     max-width: 1310px;
     padding: 0 50px;
+    margin: 0 auto;
 }
 
 .content{
     padding-top: var(--contentSpace, 100px);
     padding-bottom: var(--contentSpace, 100px);
+}
+
+.section{
+    color: var(--bodyColor);
+    background-color: var(--bodyBgColor);
 }
 
 .main-section{

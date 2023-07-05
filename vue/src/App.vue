@@ -8,7 +8,7 @@ const authStore = useAuthStore();
 <template>
     <Nav />
     <Alert />
-    <div class="login-view">
+    <div class="main-body-section">
         <router-view />
     </div>
 </template>

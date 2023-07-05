@@ -10,7 +10,8 @@ if (authStore.user) {
 </script>
 
 <template>
-    <div class="login-hero-section">
+    <div class="login-view">
+        <div class="login-hero-section">
         <section  class="loginhero container-full">
             <div  class="login-hero-bg"><img src="@/assets/img/png/hero_desktop.png"></div>
             <div class="login-hero-content section-type-1">
@@ -34,5 +35,6 @@ if (authStore.user) {
     </div>
     <div class="login-log-form">
         <router-view />
+    </div>
     </div>
 </template>
