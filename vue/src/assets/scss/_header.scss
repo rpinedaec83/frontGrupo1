@@ -1,5 +1,5 @@
 :root{
-    --headerHeight: 58px;
+    --headerNav: 58px;
 }
 .header{
     position: fixed;
@@ -7,10 +7,22 @@
     z-index: 12;
     width: 100%;
     .header-inner{
-        height: var(--headerHeight);
+        height: var(--headerNav);
         display: flex;
         justify-content: space-between;
-        
+        align-items: center;
+        max-width: var(--container);
+        margin: 0 auto;
+        padding: 0 50px;
+        .header-logo{
+
+        }
+        .header-menu{
+            .main-menu{
+                display: flex;
+                align-items: center;
+            }
+        }
     }
     &.is-alternate{
         
