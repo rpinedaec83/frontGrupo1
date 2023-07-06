@@ -1,6 +1,9 @@
 <script setup>
 import { useAuthStore } from '@/stores';
 const authStore = useAuthStore();
+
+const burger = document.getElementById("burger-button");
+
 </script>
 
 <template>
