@@ -2,33 +2,34 @@
 import { Nav, Alert, Footer } from '@/components';
 import { useAuthStore } from '@/stores';
 
+import { accede, Home } from '@/views';
+
 const authStore = useAuthStore();
 </script>
 
-<script>
-    import { ref } from "vue";
-
-    export default {
-        data() {
-            return {
-            show: true
-            };
-        }
-    };
-</script>
-
 <template>
-    <Nav v-show="show" />
+    <Nav  v-if="!hideHeader" />
     <Alert />  
     <div class="main-body-section">
-        <router-view />
-    </div> 
-    <Footer v-show="show" /> 
+    <router-view /> 
+    </div>
+    <Footer v-if="!hideFooter" /> 
 </template>
 
 <style>
 @import '@/assets/scss/main.css';
 </style>
 
-
+<script>
+export default {
+  computed: {
+    hideHeader() {
+      return this.$route.meta.hideHeaderFooter === true;
+    },
+    hideFooter() {
+      return this.$route.meta.hideHeaderFooter === true;
+    },
+  },
+};
+</script>
 

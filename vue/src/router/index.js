@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import { useAuthStore, useAlertStore } from '@/stores';
 import { Home } from '@/views';
+import { accede } from '@/views';
 import accountRoutes from './account.routes';
 import usersRoutes from './users.routes';
 
@@ -10,6 +11,11 @@ export const router = createRouter({
     linkActiveClass: 'active',
     routes: [
         { path: '/', component: Home },
+        {
+            path: "/accede",
+            component: accede,
+            meta: { hideHeaderFooter: true },
+          },
         { ...accountRoutes },
         { ...usersRoutes },
         // catch all redirect to home page
@@ -17,21 +23,23 @@ export const router = createRouter({
     ]
 });
 
-router.beforeEach(async (to) => {
-    // clear alert on route change
-    const alertStore = useAlertStore();
-    alertStore.clear();
+
+
+// router.beforeEach(async (to) => {
+//     // clear alert on route change
+//     const alertStore = useAlertStore();
+//     alertStore.clear();
 
     
-    // redirect to login page if not logged in and trying to access a restricted page 
-    const publicPages = ['/account/login', '/account/register'];
-    const authRequired = !publicPages.includes(to.path);
-    const authStore = useAuthStore();
+//     // redirect to login page if not logged in and trying to access a restricted page 
+//     const publicPages = ['/account/login', '/account/register'];
+//     const authRequired = !publicPages.includes(to.path);
+//     const authStore = useAuthStore();
 
     
-    if (authRequired && !authStore.user) {
-        authStore.returnUrl = to.fullPath;
-        return '/account/login';
-    }
+//     if (authRequired && !authStore.user) {
+//         authStore.returnUrl = to.fullPath;
+//         return '/account/login';
+//     }
     
-});
+// });

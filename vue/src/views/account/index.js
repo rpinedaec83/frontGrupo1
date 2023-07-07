@@ -4,10 +4,3 @@ export { default as Register } from './Register.vue';
 
 
 
-export default {
-    data() {
-        return {
-        show: false
-        };
-    }
-};

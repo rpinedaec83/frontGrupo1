@@ -6,6 +6,7 @@ const burger = document.getElementById("burger-button");
 
 </script>
 
+
 <template>
     <nav class="header">
         <div class="header-inner">
@@ -34,6 +35,12 @@ const burger = document.getElementById("burger-button");
             </div>
             <div class="header-menu">
                 <ul class="main-menu">
+                    <li class="menu-item menu-item-login">
+                        <router-link to="/accede" class="btn btn-link titulo-form">Iniciar Sesión</router-link>
+                    </li>
+                    <li class="menu-item menu-item-register">
+                        <router-link to="/accede" class="btn btn-link titulo-form">Registrar</router-link>
+                    </li>
                     <li class="menu-item menu-item-carrito">
                         <a href=""></a>
                     </li>
