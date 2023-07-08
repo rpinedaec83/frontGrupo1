@@ -1,0 +1,9 @@
+.button-form-continue{
+    background-color: var(--blue);
+}
+button:focus, input[type="submit"]:focus, input:focus{
+    outline: none;
+}
+button, input[type="submit"]{
+    cursor: pointer;
+}

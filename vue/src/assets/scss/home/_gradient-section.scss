@@ -1,0 +1,43 @@
+.gradient-section{
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    .content{
+        --contentSpace: 50px;
+    }
+    .content-wrapper{
+        display: flex;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+        @media only screen and (min-width: 768px){
+            flex-direction: row;
+            margin-left: -150px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            width: 150vw;
+            height: calc(100% - 40px);
+            bottom: -100px;
+            top: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(#3015fd 0%, #5640ff 100%);
+            @media only screen and (min-width: 768px){
+                height: calc(100% - 120px);
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .overlay{
+            max-width: 323px;
+            position: relative;
+        }
+    }
+    .column{
+        max-width: 600px;
+        position: relative;
+        //padding-left: 270px;
+    }
+}

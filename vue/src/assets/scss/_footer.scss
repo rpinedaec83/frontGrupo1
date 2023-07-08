@@ -1,0 +1,23 @@
+
+:root{
+    --FooterNav: 102px;
+}
+
+.footer{
+    background-color: var(--darkblue2);
+    .footer-inner{
+        min-height: var(--FooterNav);
+        max-width: var(--container);
+        margin: 0 auto;
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media only screen and (max-width: 989px){
+            padding: 0 7.5vw;
+        }
+        .title-respaldo{
+            color: var(--white);
+        }
+    }
+}
