@@ -11,10 +11,10 @@
 }
 
 .alert-danger {
-    color: #fff;
+    color: var(--white);
     font-weight: var(--bold);
-    background-color: #dc3545;
-    border-color: #dc3545;
+    background-color: var(--red3);
+    border-color: var(--red3);
 }
 
 button.close {
