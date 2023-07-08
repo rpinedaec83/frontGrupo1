@@ -42,7 +42,7 @@ const burger = document.getElementById("burger-button");
                         <router-link to="/accede" class="btn btn-link titulo-form">Registrar</router-link>
                     </li>
                     <li class="menu-item menu-item-carrito">
-                        <a href=""></a>
+                        <a href="/carrito"></a>
                     </li>
                     <li class="menu-item menu-item-burger">
                         <button id="burger-button" class="hamburger-toggle">
