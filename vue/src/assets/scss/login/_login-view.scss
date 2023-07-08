@@ -4,6 +4,9 @@
     position: relative;
     padding: 0.75rem 9.25rem;
     border: 1px solid transparent;
+    @media only screen and (max-width: 767px) {
+        padding: 0.75rem 1.25rem;
+    }
 }
 
 .alert-success {
@@ -15,6 +18,9 @@
     font-weight: var(--bold);
     background-color: var(--red3);
     border-color: var(--red3);
+    @media only screen and (max-width: 767px) {
+       font-size: 12px;
+    }
 }
 
 button.close {
@@ -30,6 +36,9 @@ button.close {
     line-height: 1;
     color: var(--white);
     opacity: 1;
+    @media only screen and (max-width: 767px) {
+        font-size: 18px;
+    }
 }
 
 
@@ -260,7 +269,8 @@ button.close {
 .login-form-switch a .titulo-form,
 .login-form-switch div .titulo-form {
     font-weight: 700;
-    text-decoration: none
+    text-decoration: none;
+    min-height: 40px;
 }
 
 .login-form-switch a .switch-stick,
