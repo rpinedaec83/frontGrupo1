@@ -2,9 +2,10 @@
 
 .alert {
     position: relative;
-    padding: 0.75rem 1.25rem;
+    padding: 0.75rem 7.25rem;
     border: 1px solid transparent;
 }
+
 
 .alert-success {
     color: #155724;
@@ -17,6 +18,11 @@
     background-color: #dc3545;
     border-color: #dc3545;
 }
+
+.alert-success {
+    display: none;
+}
+
 
 button.close {
     padding: 0;
@@ -35,13 +41,15 @@ button.close {
 }
 
 
-.invalid-feedback{
+.invalid-feedback {
     width: 100%;
     font-size: 80%;
     color: #F22A40;
     margin-bottom: 5px;
     text-align: right;
 }
+
+
 
 
 /* Style Hero */
@@ -172,7 +180,7 @@ button.close {
 
 .login-in-form input[type=email],
 .login-in-form input[type=password],
-.login-in-form input[type=text]{
+.login-in-form input[type=text] {
     border: 1px solid grey;
     padding: 0 15px;
     border-radius: 5px;

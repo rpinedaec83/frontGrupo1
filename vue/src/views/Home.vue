@@ -7,6 +7,19 @@ const authStore = useAuthStore();
 const { user } = storeToRefs(authStore);
 </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const containerAlert = document.getElementById('containerAlert');
+        const alertDanger = containerAlert.querySelector('.alert-danger');
+
+        if (alertDanger) {
+        containerAlert.classList.add('fade-out');
+        setTimeout(() => {
+            containerAlert.style.display = 'none';
+        }, 5000);
+        }
+    });
+</script>
 
 
 <template>
