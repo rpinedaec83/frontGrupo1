@@ -1,5 +1,8 @@
 :root {
     --headerNav: 58px;
+    @media only screen and (max-width: 767px){
+        --headerNav: 100px;
+    }
 }
 
 .header {
@@ -166,3 +169,4 @@
         }
     }
 }
+
