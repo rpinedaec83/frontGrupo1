@@ -1,7 +1,11 @@
 <script setup>
 import { useAuthStore } from '@/stores';
 const authStore = useAuthStore();
+
+const burger = document.getElementById("burger-button");
+
 </script>
+
 
 <template>
     <nav class="header">
@@ -31,6 +35,12 @@ const authStore = useAuthStore();
             </div>
             <div class="header-menu">
                 <ul class="main-menu">
+                    <li class="menu-item menu-item-login">
+                        <router-link to="/accede" class="btn btn-link titulo-form">Iniciar Sesión</router-link>
+                    </li>
+                    <li class="menu-item menu-item-register">
+                        <router-link to="/accede" class="btn btn-link titulo-form">Registrar</router-link>
+                    </li>
                     <li class="menu-item menu-item-carrito">
                         <a href=""></a>
                     </li>
@@ -42,11 +52,13 @@ const authStore = useAuthStore();
                 </ul>
             </div>
         </div>
+        <!--
         <div class="hambuger-content">
             <div class="hamburger-content-inner">
                 <router-link to="/users" v-show="authStore.user"  class="nav-item nav-link">Users</router-link>
                 <button v-show="authStore.user"  @click="authStore.logout()" class="btn btn-link nav-item nav-link">Logout</button>
             </div>
         </div>
+        -->
     </nav>
 </template>

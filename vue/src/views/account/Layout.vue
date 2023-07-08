@@ -11,19 +11,11 @@ if (authStore.user) {
 
 <script>
 export default {
-  mounted() {
-    // Function to check if the header element is present and hide it if it is
-    const hideHeaderIfLoginViewPresent = () => {
-      const loginViewElement = document.querySelector('.login-view');
-      const headerElement = document.querySelector('.header');
-
-      if (loginViewElement && headerElement) {
-        headerElement.style.display = 'none';
-      }
+  data() {
+    return {
+      show: false
     };
-
-    hideHeaderIfLoginViewPresent();
-  },
+  }
 };
 </script>
 

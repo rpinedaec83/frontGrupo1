@@ -1,5 +1,6 @@
 import { Layout, Login, Register } from '@/views/account';
 
+
 export default {
     path: '/account',
     component: Layout,
@@ -7,5 +8,10 @@ export default {
         { path: '', redirect: 'login' },
         { path: 'login', component: Login },
         { path: 'register', component: Register }
-    ]
+    ],
 };
+
+
+
+
+    
