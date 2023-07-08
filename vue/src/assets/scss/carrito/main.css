@@ -289,11 +289,12 @@ input,a {
     position: sticky;
     top: 0;
     width: 100%;
+    justify-content: start;
 }
 
 .header-carrito .--icon {
     grid-area: icon_;
-    margin-inline-start: 2em;
+    margin-inline: 2em;
 }
 
 .header-carrito .texto-form {
