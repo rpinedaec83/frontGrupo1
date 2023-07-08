@@ -5,10 +5,7 @@ import { useAlertStore } from '@/stores';
 
 const alertStore = useAlertStore();
 const { alert } = storeToRefs(alertStore);
-
 </script>
-
-
 
 
 <template>

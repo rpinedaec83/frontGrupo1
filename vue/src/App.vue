@@ -20,8 +20,6 @@ const authStore = useAuthStore();
 @import '@/assets/scss/main.css';
 </style>
 
-
-
 <script>
 export default {
   computed: {
