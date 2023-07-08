@@ -1,6 +1,7 @@
 <script setup>
 import { Nav, Alert, Footer } from '@/components';
 import { useAuthStore } from '@/stores';
+import { Carrito } from '@/views';
 
 import { accede, Home } from '@/views';
 
@@ -14,6 +15,7 @@ const authStore = useAuthStore();
     <router-view /> 
     </div>
     <Footer v-if="!hideFooter" /> 
+    <!-- <Carrito /> -->
 </template>
 
 <style>
