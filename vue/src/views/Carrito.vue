@@ -89,7 +89,7 @@ const { user } = storeToRefs(authStore);
                 <div class="input-form">
                     <input type="text" name="discount" id="discount" class="input-form__discount"
                         placeholder="Código de descuento">
-                    <img src="../source/img/imput_send.svg" alt="" srcset="" class="input-form__icon-send">
+                    <img src="../assets/img/imput_send.svg" alt="" srcset="" class="input-form__icon-send">
                 </div>
                 <div class="form-cardpay">
                     <a href="" class="a-button btn_finaly">
