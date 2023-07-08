@@ -52,11 +52,13 @@ const burger = document.getElementById("burger-button");
                 </ul>
             </div>
         </div>
+        <!--
         <div class="hambuger-content">
             <div class="hamburger-content-inner">
                 <router-link to="/users" v-show="authStore.user"  class="nav-item nav-link">Users</router-link>
                 <button v-show="authStore.user"  @click="authStore.logout()" class="btn btn-link nav-item nav-link">Logout</button>
             </div>
         </div>
+        -->
     </nav>
 </template>

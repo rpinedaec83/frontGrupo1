@@ -1,0 +1,39 @@
+.beneficios-section{
+    form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        @media only screen and (min-width: 1200px){
+            display: none;
+        }
+        .heading-wrapper{
+            color: var(--darkBlue);
+            margin-bottom: 20px;
+        }
+        input[type=text]{
+            border-radius: 5px;
+            border: 1px solid #8b9099;
+            padding: 15px 10px;
+            font-size: 12px;
+            font-weight: var(--medium);
+            text-transform: uppercase;
+            &:not(:last-child){
+                margin-bottom: 15px;
+            }
+        }
+        span{
+            label{
+                font-size: 12px;
+                color: var(--darkBlue);
+            }
+        }
+        button{
+            background-color: var(--blue);
+            color: var(--white);
+            border: 0;
+            border-radius: 5px;
+            padding: 17px 20px;
+            margin-top: 50px;
+        }
+    }
+}

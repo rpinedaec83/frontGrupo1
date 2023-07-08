@@ -9,9 +9,8 @@
         }
     }
     .heading-wrapper{
-        &.heading-is-purple{
-            --headingWeight: var(--bold);
-        }
+        --headingWeight: var(--bold);
+        margin-bottom: 30px;
     }
     .cursos-wrapper{
         max-width: 718px;

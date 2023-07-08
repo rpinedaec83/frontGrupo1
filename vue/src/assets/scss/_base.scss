@@ -16,8 +16,11 @@ body{
 }
 
 h1{
-    font-size: 54px;
+    font-size: 26px;
     font-weight: var(--headingWeight, var(--bold));
+    @media only screen and (min-width: 768px){
+        font-size: 54px;
+    }
 }
 
 h2{
@@ -26,14 +29,25 @@ h2{
 }
 
 h3{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: var(--headingWeight, var(--bold));
+    @media only screen and (min-width: 768px){
+        font-size: 20px;
+    }
+}
+
+h4{
+    font-size: 16px;
+    font-weight: var(--headingWeight, var(--medium));
 }
 
 .container{
     max-width: var(--container);
-    padding: 0 50px;
+    padding: 0 7.5vw;
     margin: 0 auto;
+    @media only screen and (min-width: 768px){
+        padding: 0 50px;
+    }
 }
 
 .content{
