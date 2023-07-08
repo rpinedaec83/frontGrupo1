@@ -7,6 +7,8 @@ const authStore = useAuthStore();
 const { user } = storeToRefs(authStore);
 </script>
 
+
+
 <template>
     <div class="section alternate-section hero-section">
         <div class="container">

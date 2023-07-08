@@ -14,9 +14,6 @@
         max-width: var(--container);
         margin: 0 auto;
         padding: 0 50px;
-        .header-logo{
-
-        }
         .header-menu{
             .main-menu{
                 display: flex;
@@ -81,6 +78,18 @@
                                     bottom: 0;
                                     left: 0;
                                 }
+                            }
+                        }
+                    }
+                    &.menu-item-login,
+                    &.menu-item-register{
+                        a{
+                            color: var(--white);
+                            text-decoration: none;
+                            font-size: 16px;
+                            transition: color ease-in-out 0.2s;
+                            &:hover{
+                              color: #705ef5;
                             }
                         }
                     }
