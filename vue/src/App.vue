@@ -1,6 +1,7 @@
 <script setup>
 import { Nav, Alert } from '@/components';
 import { useAuthStore } from '@/stores';
+import { Carrito } from '@/views';
 
 const authStore = useAuthStore();
 </script>
@@ -11,6 +12,7 @@ const authStore = useAuthStore();
     <div class="main-body-section">
         <router-view />
     </div>
+    <Carrito />
 </template>
 
 <style>

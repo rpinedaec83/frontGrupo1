@@ -1,0 +1,558 @@
+<script setup>
+import { Nav, Alert } from '@/components';
+import { useAuthStore } from '@/stores';
+
+const authStore = useAuthStore();
+</script>
+
+<template>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../scss/plantilla/main.css">
+        <link href="https://css.gg/css" rel="stylesheet" />
+        <title>Plantillas Shop</title>
+    </head>
+
+    <body>
+        <div class="header-carrito">
+            <i class="gg-arrow-left --icon"></i>
+            <p class="texto-form">Carrito de Compra</p>
+        </div>
+        <div class="product-shop">
+            <div class="list_products">
+                <div class="card-product">
+                    <div class="product__img">
+                        <img src="../source/img/back_end.png" alt="" srcset="" class="imagen-product">
+                    </div>
+                    <div class="product__info">
+                        <p class="title-product">Gestión de Envases, Empaques y Embalajes</p>
+                        <p class="discount-product">Dto. 30%</p>
+                        <a href="" class="delate-product">Eliminar</a>
+                        <p class="price-product">s/504.00</p>
+                    </div>
+                </div>
+                <div class="card-product">
+                    <div class="product__img">
+                        <img src="../source/img/back_end.png" alt="" srcset="" class="imagen-product">
+                    </div>
+                    <div class="product__info">
+                        <p class="title-product">Especializacion Front-End</p>
+                        <p class="discount-product">Dto. 20%</p>
+                        <a href="" class="delate-product">Eliminar</a>
+                        <p class="price-product">s/607.00</p>
+                    </div>
+                </div>
+                <div class="card-product">
+                    <div class="product__img">
+                        <img src="../source/img/back_end.png" alt="" srcset="" class="imagen-product">
+                    </div>
+                    <div class="product__info">
+                        <p class="title-product">Gestión de Envases, Empaques y Embalajes</p>
+                        <p class="discount-product">Dto. 30%</p>
+                        <a href="" class="delate-product">Eliminar</a>
+                        <p class="price-product">s/504.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-paycard">
+                <div class="price_finaly">
+                    <p class="texto-form">
+                        SubTotal
+                    </p>
+                    <p class="texto-form">
+                        S/600.00
+                    </p>
+                </div>
+                <div class="input-form">
+                    <input type="text" name="discount" id="discount" class="input-form__discount"
+                        placeholder="Código de descuento">
+                    <img src="../source/img/imput_send.svg" alt="" srcset="" class="input-form__icon-send">
+                </div>
+                <div class="form-cardpay">
+                    <a href="" class="a-button btn_finaly">
+                        <button type="button" class="a-button__paymentMethod --activate">
+                            Continuar
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>
+</template>
+
+<style>
+@import '@/assets/scss/main.css';
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+    /* Font Family*/
+    --fontFamily: "Poppins", sans-serif;
+    /*Colores */
+    --black: #000;
+    --white: #fff;
+    --white2: #F8F8FA;
+    --gray: #222;
+    --gray2: #F2F3F5;
+    --gray3: #c4c4c4;
+    --gray4: #EFEFEF;
+    --blue: #5640FF;
+    --blue-obscure: #1d127e;
+    --darkBlue: #000425;
+    --darkblue2: #000D29;
+    --red: #F22A40;
+    /* Font Weights*/
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+    /* Gradient */
+    --blue-to-lightblue: linear-gradient(180deg, rgba(48, 21, 253, 1) 0%, rgba(86, 64, 255, 1) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontFamily);
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: var(--bold);
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: var(--bold);
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: var(--medium);
+}
+
+button {
+    font-family: var(--fontFamily);
+}
+
+.a-button {
+    outline: none;
+    text-decoration: none;
+    margin-inline: auto;
+    padding-inline: 0.3em;
+}
+
+.a-button button {
+    font-weight: 600;
+    border-radius: 0.4em;
+    padding: 1.3em 1em;
+}
+
+.a-button .a-button__continue {
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 1em 7em;
+    border: 0.13em solid var(--blue);
+}
+
+.a-button .a-button__continue:hover {
+    color: var(--gray);
+    background-color: var(--white);
+    border-color: var(--blue-obscure);
+    transition: 0.5s all;
+}
+
+.a-button .a-button__paymentMethod {
+    text-align: center;
+    color: var(--gray);
+    background-color: var(--gray4);
+    border: 0.13em solid var(--gray4);
+}
+
+.a-button .--activate {
+    color: var(--white);
+    background-color: var(--blue);
+    border: 0.13em solid var(--blue);
+}
+
+.input-form {
+    border: 0.15em solid var(--gray3);
+    border-radius: 0.6em;
+    display: flex;
+    margin: 0.45em;
+}
+
+.input-form .input-form__discount {
+    margin: 0.7em auto 0.7em 0.3em;
+    padding-inline: 0.5em;
+    font-size: 1.1em;
+}
+
+.input-form .input-form__icon-send {
+    transform: scale(1.5);
+    padding-inline-end: 0.7em;
+}
+
+.--paymentInformation {
+    margin: 0.8em auto 0.8em 0.8em;
+    width: max-content;
+}
+
+.-date {
+    display: inline-block;
+}
+
+.-date .--date {
+    width: 4em;
+    margin: 0.8em 1em;
+}
+
+.texto-form {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.text-form-shop {
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.text-shop-product {
+    color: var(--black);
+    font-weight: 700;
+}
+
+.title-product {
+    font-weight: 700;
+    width: 11em;
+}
+
+.price-product {
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.discount-product {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.delate-product {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.imagen-product {
+    width: 10em;
+    height: 7.8em;
+    object-fit: cover;
+    border-radius: 0.4em;
+}
+
+.card-product {
+    display: flex;
+    width: fit-content;
+    margin: 0.3em auto;
+}
+
+.card-product .product__info {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 3px;
+    grid-template-areas: "title title title" "descuento descuento descuento" "delate delate price";
+    align-content: space-between;
+    align-items: center;
+    margin: 0 0.5em;
+}
+
+.card-product .product__info .title-product {
+    grid-area: title;
+}
+
+.card-product .product__info .discount-product {
+    grid-area: descuento;
+}
+
+.card-product .product__info .delate-product {
+    grid-area: delate;
+}
+
+.card-product .product__info .price-product {
+    grid-area: price;
+}
+
+.price_finaly {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.7em 0.5em;
+}
+
+.button-payments {
+    display: flex;
+}
+
+.form-cardpay .form-cardpay__card .card__date {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-cardpay .card-dues {
+    justify-content: space-around;
+}
+
+.form-cardpay .card-dues .a-button__paymentMethod {
+    background-color: var(--white);
+}
+
+.form-cardpay .card-dues .--dues {
+    width: 1.5em;
+    height: 1em;
+    border: 0.1em solid var(--gray3);
+}
+
+.form-cardpay .card-dues .--activate {
+    background-color: var(--blue);
+}
+
+.form-cardpay .card-dues .card-dues__btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-cardpay .card-facture {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-cardpay .card-facture .feature-activate {
+    margin-inline: 0.5em;
+}
+
+.form-cardpay .btn_finaly {
+    margin: 0.3em auto;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+}
+
+.form-cardpay .btn_finaly button {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.successful-purchase {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.successful-purchase .--text {
+    margin-inline: 0.4em;
+}
+
+.header-carrito {
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "icon_ header header";
+    background-color: var(--darkBlue);
+    color: var(--white);
+    padding-block: 1em;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.header-carrito .--icon {
+    grid-area: icon_;
+    margin-inline-start: 2em;
+}
+
+.header-carrito .texto-form {
+    grid-area: header;
+    color: var(--white);
+}
+
+.list_products {
+    display: grid;
+    grid-gap: 0.3em;
+}
+
+.list_products .card-product {
+    margin: 0.6em 0.3em;
+}
+
+.list_products .card-product .product__info .discount-product {
+    display: flex;
+}
+
+.box-paycard {
+    margin-block: 1em;
+    height: fit-content;
+    display: grid;
+    grid-gap: 4px;
+}
+
+.product-shop {
+    display: grid;
+    align-content: space-between;
+    justify-content: center;
+}
+
+body {
+    height: 100%;
+}
+
+@media (min-width: 375px) {
+    .card-product .imagen-product {
+        width: 12em;
+    }
+}
+
+@media (min-width: 600px) {
+    .product-shop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s all;
+    }
+}
+
+@media (min-width: 425px) {
+    .card-product .imagen-product {
+        height: 7.3em;
+    }
+
+    .card-product .product__info .title-product {
+        width: 14em;
+    }
+}
+
+@media (min-height: 667px) {
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body .product-shop {
+        height: inherit;
+        display: grid;
+    }
+
+    body .product-shop .box-paycard {
+        margin-block: 2em;
+    }
+}
+
+@media (min-height: 844px) {
+    .product-shop .box-paycard {
+        margin-block: 10em 1em;
+    }
+}
+
+@media (min-width: 425px) {
+    .product-shop .list_products .product__info .title-product {
+        width: 16em;
+        font-weight: 600;
+    }
+}
+
+@media (min-height: 844px) {
+    .product-shop .list_products {
+        margin-block: 4em 1em;
+    }
+
+    .product-shop .list_products .imagen-product {
+        height: 8em;
+        width: 12em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .product-shop {
+        grid-template-columns: repeat(2, auto);
+        align-content: center;
+    }
+
+    .product-shop .list_products {
+        margin: 1em;
+    }
+
+    .product-shop .list_products .card-product .imagen-product {
+        width: 15em;
+        height: 10em;
+    }
+
+    .product-shop .list_products .card-product .product__info .title-product {
+        font-size: 1.5em;
+    }
+
+    .product-shop .list_products .card-product .product__info .discount-product {
+        font-size: 1em;
+    }
+
+    .product-shop .list_products .card-product .product__info .delate-product {
+        font-size: 1.1 em;
+    }
+
+    .product-shop .list_products .card-product .product__info .price-product {
+        font-size: 1.5em;
+        text-align: end;
+    }
+
+    .product-shop .box-paycard {
+        width: 28em;
+    }
+
+    .product-shop .box-paycard .input-form__discount {
+        padding: 0.4em 0.8em;
+    }
+
+    .product-shop .box-paycard .a-button__paymentMethod {
+        font-size: 1.3em;
+        padding-block: 1em;
+    }
+}
+
+@media (min-width: 1440px) {
+    .product-shop .list_products .card-product .imagen-product {
+        width: 19em;
+    }
+
+    .product-shop .list_products .card-product .product__info {
+        grid-template-areas: "title title price" "descuento descuento descuento" "delate delate delate";
+    }
+
+    .product-shop .list_products .card-product .product__info .title-product {
+        width: 25em;
+        font-size: 1.7em;
+    }
+
+    .product-shop .list_products .card-product .product__info .discount-product,
+    .product-shop .list_products .card-product .product__info .delate-product {
+        font-size: 1.2em;
+    }
+
+    .product-shop .list_products .card-product .product__info .price-product {
+        font-size: 1.5em;
+    }
+}
+</style>
