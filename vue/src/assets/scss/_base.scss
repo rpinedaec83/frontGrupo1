@@ -50,6 +50,12 @@ h4{
     }
 }
 
+.container-alert{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 .content{
     padding-top: var(--contentSpace, 100px);
     padding-bottom: var(--contentSpace, 100px);

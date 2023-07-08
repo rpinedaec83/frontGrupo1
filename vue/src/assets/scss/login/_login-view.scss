@@ -2,20 +2,19 @@
 
 .alert {
     position: relative;
-    padding: 0.75rem 1.25rem;
+    padding: 0.75rem 9.25rem;
     border: 1px solid transparent;
 }
 
 .alert-success {
-    color: #155724;
-    background-color: #d4edda;
-    border-color: #c3e6cb;
+    display: none;
 }
 
 .alert-danger {
-    color: #fff;
-    background-color: #dc3545;
-    border-color: #dc3545;
+    color: var(--white);
+    font-weight: var(--bold);
+    background-color: var(--red3);
+    border-color: var(--red3);
 }
 
 button.close {
@@ -29,9 +28,8 @@ button.close {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1;
-    color: #000;
-    text-shadow: 0 1px 0 #fff;
-    opacity: .5;
+    color: var(--white);
+    opacity: 1;
 }
 
 
