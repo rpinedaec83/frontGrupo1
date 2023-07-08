@@ -12,7 +12,7 @@ const authStore = useAuthStore();
     <div class="main-body-section">
         <router-view />
     </div>
-    <Carrito />
+    <!-- <Carrito /> -->
 </template>
 
 <style>
